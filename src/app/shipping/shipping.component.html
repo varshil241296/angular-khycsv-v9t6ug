@@ -1,0 +1,4 @@
+<div *ngFor="let shippingCharge of shippingCharges">
+  <h3>{{ shippingCharge.type }}</h3>
+  <h4>{{ shippingCharge.price | currency }}</h4>
+</div>
