@@ -3,7 +3,7 @@ import { HttpClient } from "@angular/common/http";
 @Injectable()
 export class CartService {
   item = [];
-  constructor(private _http: HttpClient) {}
+  constructor(private http: HttpClient) {}
   addToCart(product) {
     this.item.push(product);
     localStorage.setItem("clickCounter", JSON.stringify(this.item));
