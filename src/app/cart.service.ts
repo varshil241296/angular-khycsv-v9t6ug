@@ -6,10 +6,10 @@ export class CartService {
   constructor(private http: HttpClient) {}
   addToCart(product) {
     this.item.push(product);
-    localStorage.setItem("clickCounter", JSON.stringify(this.item));
+    // localStorage.setItem("clickCounter", JSON.stringify(this.item));
   }
   getItems() {
-    this.item = JSON.parse(localStorage.getItem("clickCounter"));
+    //this.item = JSON.parse(localStorage.getItem("clickCounter"));
     return this.item;
   }
   getShippingPrices() {
